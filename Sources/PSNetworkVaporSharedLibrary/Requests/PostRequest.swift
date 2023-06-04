@@ -2,8 +2,8 @@ import PSNetwork
 
 public struct PostRequest: PSRequest {
     public typealias ResponseModel = PostOutput
-    public var host: String = "127.0.0.1"
-    public var port: Int? = 8000
+    public var host: String = "localhost"
+    public var port: Int? = 8080
     public static var path: [String] = ["api"]
     public var authorizationType: PSNetwork.AuthorizationType = .none
     public static var method: PSNetwork.Method = .post
